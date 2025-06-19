@@ -1,16 +1,23 @@
-## Hi there 👋
+# Hi there, I'm burundu4ok2000 👋
 
-<!--
-**burundu4ok2000/burundu4ok2000** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 I'm on a journey to become a **Data & Backend Developer**, focused on:
+- 🧠 Clean data, automation & AI integration
+- 🎬 My first product: an AI-powered **casting platform** for child actors
+- 🌍 Dream: to build remote-first tools that help people — and live freely
 
-Here are some ideas to get you started:
+🧰 Tech stack I'm exploring:
+`Python` • `SQL` • `Pandas` • `FastAPI`  
+`Docker` • `Airflow` • `Git` • `ChatGPT API`
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+📚 Currently learning:
+- Python basics & data workflows
+- Git & GitHub for project control
+- How to build smart & useful things
+
+📌 2025 Goals:
+- [x] Launch GitHub profile 🎉  
+- [ ] Build MVP of casting platform  
+- [ ] Earn my first freelance income  
+- [ ] Apply for remote developer jobs  
+
+📬 Reach me: **burundu4ok2000@gmail.com**
