@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CS50x](https://img.shields.io/badge/CS50x-Graduate_2024-crimson?style=for-the-badge&logo=edx&logoColor=white)](https://cs50.harvard.edu/x/)
+[![CS50x](https://img.shields.io/badge/CS50x-Graduate_2025-crimson?style=for-the-badge&logo=edx&logoColor=white)](https://cs50.harvard.edu/x/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)](https://postgresql.org)
 
