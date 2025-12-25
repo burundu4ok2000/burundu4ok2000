@@ -12,11 +12,7 @@
 
 ## 🚀 About Me
 
-I'm a **CS50x graduate** on a journey to become a **Data & Backend Engineer**, focused on:
-
-- 🧠 **Clean data pipelines**, automation & AI integration
-- 🎬 Building my first product: an AI-powered **casting platform** for child actors  
-- 🌍 Dream: to build remote-first tools that help people — and live freely
+I'm a **CS50x graduate** on a journey to become a **Data & Backend Engineer**
 
 ---
 
@@ -30,7 +26,7 @@ I'm a **CS50x graduate** on a journey to become a **Data & Backend Engineer**, f
 `FastAPI` • `Airflow` • `Docker` • `Git`
 
 ### 🤖 AI & Automation
-`OpenAI API` • `LangChain` • `Prompt Engineering`
+`OpenAI API` • `Prompt Engineering` `MCP`
 
 ---
 
@@ -47,9 +43,6 @@ I'm a **CS50x graduate** on a journey to become a **Data & Backend Engineer**, f
 
 - [x] Complete CS50x 🎓
 - [x] Launch GitHub profile 🎉
-- [ ] Build MVP of casting platform
-- [ ] Get first Data Engineering role
-- [ ] Contribute to open-source data tools
 
 ---
 
