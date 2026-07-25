@@ -158,6 +158,31 @@ This project simulates a fleet of aircraft engines generating high-frequency tel
 
 ---
 
+### 🔒 [ [ DEVOPS ] Self-Healing VPN Orchestrator: Hexagonal Architecture + Dagger CI/CD](https://github.com/stan-buren/virtual-private-network)
+> **From 934 lines of spaghetti to a production-grade Docker orchestrator with event-driven state machine, JSON-RPC CLI, and one-command Dagger deployment.**
+
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat-square&logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-NET_ADMIN-2496ED?style=flat-square&logo=docker&logoColor=white)
+![sing-box](https://img.shields.io/badge/sing--box-VLESS_Reality-00BFA5?style=flat-square)
+![Dagger](https://img.shields.io/badge/Dagger-CI/CD-00ADD8?style=flat-square&logo=dagger&logoColor=white)
+![asyncio](https://img.shields.io/badge/asyncio-Event_Driven-7D3C98?style=flat-square&logo=python&logoColor=white)
+![JSON-RPC](https://img.shields.io/badge/IPC-JSON--RPC_Unix_Socket-FF6F00?style=flat-square)
+
+![pytest](https://img.shields.io/badge/tests-165-brightgreen?style=flat-square&logo=pytest&logoColor=white)
+![Coverage](https://img.shields.io/badge/coverage-≥80%25-green?style=flat-square)
+![just](https://img.shields.io/badge/task_runner-just-9E75FF?style=flat-square)
+
+A complete greenfield rewrite of a home VPN daemon. The old system was 934 lines of hardcoded spaghetti with `while True: sleep; check; if fail` watchdog, zero tests, and no provider abstraction. Rebuilt from scratch: **hexagonal architecture** (Ports & Adapters), **event-driven asyncio state machine** (6 states with per-state timeouts), and a **Dagger CI/CD pipeline** that builds, versions, and deploys with a single command — no GitHub, no cloud, no manual ssh.
+
+* **Hexagonal Architecture + Event-Driven Core:** Provider-agnostic design via Protocol interfaces. 6-state asyncio machine (BOOTSTRAPPING → HEALTHY → DEGRADED → RESTARTING → FAILED → STOPPED). Process watchers use `await process.wait()` — zero polling. Per-state timeouts prevent silent hangs.
+* **JSON-RPC CLI over Unix Socket:** 15 CLI commands (`vpn server change`, `vpn route add`, `vpn stop/start`) communicate with the daemon via JSON-RPC 2.0 over `/var/run/vpn.sock`. No HTTP ports, no auth — local IPC only.
+* **Dagger CI/CD Pipeline:** `dagger call pipeline` — runs 165 tests in a clean container (≥80% coverage gate), builds a versioned Docker image (`YYYYMMDD-HHMMSS-<hash>`), pushes to a local registry on the router, deploys via SSH with automated health-check, and fails loudly if the container doesn't reach HEALTHY within 20 seconds.
+* **Self-Healing with Telegram Alerts:** Randomized health checks (curl-based, 25-55s intervals). Automatic recovery: restart sing-box → restart tun2socks → re-apply routing. Telegram notifications on degradation, recovery, and fatal failures.
+* **11-Server VLESS Reality Switching:** CLI server switching in <3 seconds. Emoji-agnostic tag normalization — provider profile tags carry emoji suffixes that drift between updates; `_normalize_tag()` strips them, guaranteeing match for all 11 servers across 7 countries.
+* **Policy Routing Engine:** 8,658 Russian subnet routes loaded at bootstrap. Traffic split: RU IPs → direct WAN, everything else → VPN tunnel (catch-all priority 30 → table 100 → tun0 → SOCKS5 :3066).
+
+---
+
 ### 🎭 [ [ FRONTEND ] Russian Children Educational Theatre-Studio Website](https://github.com/stan-buren/emozika-theatre) 
 > **A modern, data-driven static website for a children's theatre studio in Saint Petersburg.**
 
