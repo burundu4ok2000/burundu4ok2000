@@ -198,7 +198,7 @@ A complete greenfield rewrite of a home VPN daemon. The old system was 934 lines
 
 ---
 
-### 💾 [ [ INFRA ] System administration ](https://nextcloud.stan-buren.ru)
+### 💾 [ INFRA ] System administration 
 
 > **20+ Docker services across 3 bare-metal Ubuntu nodes. Custom domain, automatic TLS, remote access from anywhere via sing-box tunnel.**
 
